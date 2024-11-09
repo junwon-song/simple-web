@@ -17,7 +17,7 @@ resource "aws_key_pair" "ec2_key" {
 
 # 보안 그룹 설정: SSH(22) 및 HTTP(80) 트래픽 허용
 resource "aws_security_group" "nginx_sg" {
-  name_prefix = "nginx-sg"
+  name_prefix = "nginx-sg-"
 
   ingress {
     description = "Allow SSH"
